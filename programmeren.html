@@ -7,6 +7,24 @@
         <script>
             function klikMaar(){
                 alert ("Je hebt op de knop gedrukt!")
+                var student1voornaam = "Johan";
+                var student1leeftijd = 25;
+                voorstellen(student1voornaam, student1leeftijd);
+            }
+
+            function voorstellen(voornaam, leeftijd) { //parameters
+                alert("hallo, ik ben " + voornaam + " en ik ben " + leeftijd + " jaar oud")
+            }
+
+            function viaeenobject() {
+                var student1 = {}
+                student1.voornaam = "Fred";
+                student1.leeftijd = 25;
+                voorstellenViaObject(student1);
+            }
+
+            function voorstellenViaObject(student){
+                alert ( "Hello, I am " + student.voornaam + " and I am " + student.leeftijd + " years old");     
             }
 
         </script>
@@ -14,7 +32,8 @@
     <body>
         <p>
             Dit is de eerste les van de traineeship!
-            <input type="button" value="klik maar" onclick="klikMaar()">
         </p>
+        <input type="button" value="klik maar" onclick="klikMaar()">
+        <input type="button" value="klik maar" onclick="viaeenobject()">
     </body>
 </html>
